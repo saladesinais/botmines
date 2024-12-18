@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robô Preditivo de Sinais</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom right, #001f4d, #002f6c);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+        .header-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+        }
+        .box {
+            background: linear-gradient(145deg, #002f6c, #003d80);
+            border: 2px solid #feca57;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+        h1 {
+            font-size: 2.4rem;
+            color: #feca57;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            color: #feca57;
+            font-weight: bold;
+        }
+        .price-section {
+            margin: 30px 0;
+            background-color: #ff6b6b;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(255, 87, 87, 0.7);
+            border: 2px solid #ff6b6b;
+        }
+        .price-section h2 {
+            color: #fff;
+            margin: 10px 0;
+            font-size: 1.8rem;
+        }
+        .price-original {
+            color: #fff;
+            text-decoration: line-through;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        .price-current {
+            color: #feca57;
+            font-size: 2.2rem;
+            font-weight: bold;
+        }
+        .offer-text {
+            font-size: 0.9rem;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 10px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: white;
+            background: #ff9f43;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+            animation: pulse 1.5s infinite;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+        .telegram-image {
+            width: 50px;
+            height: auto;
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .video-container {
+            margin-top: 20px;
+            border: 3px solid #feca57;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(255, 202, 87, 0.5);
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+        }
+
+        /* Animação para o botão pulsante */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Imagem do cabeçalho -->
+        <img src="header.jpg" alt="Robô Preditivo" class="header-image">
+
+        <h1>Robô Preditivo de Sinais</h1>
+
+        <div class="box">
+            <p>
+                Faça de <span class="highlight">100 MT</span> a <span class="highlight">1000 MT</span> por dia com nosso robô preditivo!  
+                O robô prevê os sinais do <span class="highlight">Mines</span> usando inteligência artificial, oferecendo sinais 
+                <span class="highlight">acertivos e garantidos</span>.
+            </p>
+        </div>
+
+        <!-- Seção de preços destacada -->
+        <div class="price-section">
+            <h2>Oferta Promocional Limitada!</h2>
+            <p class="price-original">Antes: 499 MT</p>
+            <p class="price-current">Agora: 199 MT</p>
+            <p class="offer-text">Aproveite essa oferta limitada, disponível por tempo determinado!</p>
+            <a href="https://wa.me/258848524733?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20rob%C3%B4%20do%20Mines." class="btn">Comprar no WhatsApp</a>
+        </div>
+
+        <div class="box">
+            <p>
+                Para acessar os sinais, você precisa baixar o Telegram e entrar na nossa sala exclusiva.  
+                Clique no botão abaixo para baixar o Telegram:
+            </p>
+            <!-- Imagem do Telegram -->
+            <img src="telegram.png" alt="Telegram" class="telegram-image">
+            <a href="https://play.google.com/store/apps/details?id=org.telegram.messenger" class="btn">Baixar Telegram</a>
+            
+            <div class="video-container">
+                <p style="margin-top: 20px;">Veja o tutorial de como registrar no Telegram:</p>
+                <iframe src="https://youtu.be/v9kdsayRWT4?si=pccL2V4baJXPuE4D" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
